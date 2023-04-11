@@ -46,7 +46,7 @@ export async function getStaticProps(params) {
     props:{
       posts,
     },
-   
+    revalidate: 10,
   };
 }
 export default function Home({posts}) {
